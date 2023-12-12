@@ -709,8 +709,8 @@ click_heart:
 clickShowText:
   enable: true
   text:
-    # - ezail
-    # - keep moving
+    - ezail
+    - keep moving
   fontSize: 15px
   random: false
   mobile: false

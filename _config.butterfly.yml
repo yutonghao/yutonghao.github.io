@@ -45,14 +45,14 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: http://s5k5sxsjn.hn-bkt.clouddn.com//img/头像.jpg
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: /img/公路旅行.jpg
+index_img: http://s5k5sxsjn.hn-bkt.clouddn.com//img/公路旅行.jpg
 
 # If the banner of page not setting, it will show the top_img
 default_top_img:
@@ -232,7 +232,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/yutonghao
   card_announcement:
     enable: true
     content: This is my Blog
@@ -642,10 +642,10 @@ text_align_justify: false
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: http://s5k5sxsjn.hn-bkt.clouddn.com//img/公路旅行.jpg
 
 # Footer Background
-footer_bg: false
+footer_bg: http://s5k5sxsjn.hn-bkt.clouddn.com//img/公路旅行.jpg
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
@@ -696,7 +696,7 @@ canvas_nest:
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
-  enable: true
+  enable: false
   zIndex: 9999 # -1 or 9999
   mobile: false
 
@@ -707,11 +707,10 @@ click_heart:
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
 clickShowText:
-  enable: false
+  enable: true
   text:
-    # - I
-    # - LOVE
-    # - YOU
+    # - ezail
+    # - keep moving
   fontSize: 15px
   random: false
   mobile: false
@@ -757,11 +756,11 @@ subtitle:
   typed_option:
   # source 調用第三方服務
   # source: false 關閉調用
-  source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
+  # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
   # source: 2  調用一句網（簡體） https://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  # source: false
+  source: https://hitokoto.cn/
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
 

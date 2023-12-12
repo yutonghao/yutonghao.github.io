@@ -102,8 +102,8 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:yutonghao/yutonghao.github.io.git
-  branch: main
+  repo: git@120.78.8.96:/home/git/blog.git
+  branch: master
 aplayer:
   asset_inject: false
   meting: true

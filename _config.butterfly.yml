@@ -13,11 +13,12 @@ menu:
   时间轴: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
-  清单||fas fa-list:
+  清单||fas fa-list || hide:
     音乐: /music/ || fas fa-music
-    # 电影: /movies/ || fas fa-video
-    # 照片: /Gallery || fas fa-images
+    电影: /movies/ || fas fa-video
+    照片: /Gallery || fas fa-images
   友链: /link/ || fas fa-link
+  留言板: /comments/ || fas fa-comments
   关于: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
@@ -52,10 +53,10 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: http://s5k5sxsjn.hn-bkt.clouddn.com//img/公路旅行.jpg
+index_img: 
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: http://s5k5sxsjn.hn-bkt.clouddn.com//img/公路旅行.jpg
+default_top_img: http://s5k5sxsjn.hn-bkt.clouddn.com//img/微信图片_20231217155200.png
 
 # The banner image of archive page
 archive_img:
@@ -209,7 +210,7 @@ footer:
   owner:
     enable: true
     since: 2023
-  custom_text: 嗨, 你来啦!
+  custom_text: 欢迎光临！
   copyright: true # Copyright of theme and framework
 
 # aside (側邊欄)
@@ -642,10 +643,10 @@ text_align_justify: false
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(http://s5k5sxsjn.hn-bkt.clouddn.com//img/公路旅行.jpg)
+background: url(http://s5k5sxsjn.hn-bkt.clouddn.com//img/微信图片_20231217155200.png)
 
 # Footer Background
-footer_bg: true
+footer_bg: false
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
@@ -687,7 +688,7 @@ canvas_fluttering_ribbon:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: true
+  enable: false
   color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
@@ -913,9 +914,13 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/universe.css">
   bottom:
     # - <script src="xxxx"></script>
-    - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
+    - <div class="aplayer no-destroy" data-id="9100096365" data-server="tencent" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
+    - <canvas id="universe"></canvas>
+    - <script defer src="/js/universe.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -994,3 +999,70 @@ CDN:
     # valine:
     # waline_css:
     # waline_js:
+
+# envelope_comment
+# see https://akilar.top/posts/e2d3c450/
+envelope_comment:
+  enable: true #控制开关
+  custom_pic:      
+    cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+    line: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
+    beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
+    afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
+  message: #信笺正文，多行文本，写法如下
+    - 有什么想问的？
+    - 有什么想说的？
+    - 有什么想吐槽的？
+    - 哪怕是有什么想吃的，你吃不到，但我可以做给你看看~
+  bottom: 本AI竭诚为您服务！ #仅支持单行文本
+  height: #1050px，信封划出的高度
+  path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
+  front_matter: #【可选】comments页面的 front_matter 配置
+    title: 留言板
+    comments: true
+
+# footer_beautify
+# 页脚计时器：[Native JS Timer](https://akilar.top/posts/b941af/)
+# 页脚徽标：[Add Github Badge](https://akilar.top/posts/e87ad7f8/)
+footer_beautify:
+  enable:
+    timer: true # 计时器开关
+    bdage: true # 徽标开关
+  priority: 5 #过滤器优先权
+  enable_page: all # 应用页面
+  exclude: #屏蔽页面
+    # - /posts/
+    # - /about/
+  layout: # 挂载容器类型
+    type: id
+    name: footer-wrap
+    index: 0
+  # 计时器部分配置项
+  # 这是我的 
+  runtime_js: http://120.78.8.96/static/runtime.js
+  runtime_css: # http://120.78.8.96/static/runtime.css
+  # 徽标部分配置项
+  swiperpara: 0 #若非0，则开启轮播功能，每行徽标个数
+  bdageitem:
+    - link: https://hexo.io/ #徽标指向网站链接
+      shields: https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo #徽标API
+      message: 博客框架为Hexo_v7.0.0 #徽标提示语
+
+    - link: https://butterfly.js.org/
+      shields: https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender
+      message: 主题版本Butterfly_v4.11.0
+
+    - link: https://cn.aliyun.com/
+      shields: https://img.shields.io/badge/Hosted-Aliyun-orange?style=flat&logo=aliyun
+      message: 本站使用阿里云ECS实例部署
+
+    - link: https://github.com/
+      shields: https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub
+      message: 本站项目由Github托管
+
+    - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
+      shields: https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris
+      message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
+  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css
+  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js
+  swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js

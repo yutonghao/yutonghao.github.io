@@ -1,5 +1,5 @@
 ---
-title: python面向对象.md
+title: python面向对象
 date: 2023-12-18 23:28:24
 tags: python
 categories: python

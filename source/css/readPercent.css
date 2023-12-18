@@ -7,7 +7,8 @@ button#go-up #percent {
 }
 
 button#go-up span {
-    font-size: 12px!important;
+    display: none;
+    font-size: 12px !important;
     margin-right: -1px;
 }
 

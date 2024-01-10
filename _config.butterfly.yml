@@ -46,7 +46,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: http://s5k5sxsjn.hn-bkt.clouddn.com//img/头像.jpg
+  img: https://ezailkmth.oss-cn-shenzhen.aliyuncs.com/%E5%A4%B4%E5%83%8F.jpg
   effect: false
 
 # Disable all banner image
@@ -56,7 +56,7 @@ disable_top_img: false
 index_img: 
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: http://s5k5sxsjn.hn-bkt.clouddn.com//img/微信图片_20231217155200.png
+default_top_img: https://ezailkmth.oss-cn-shenzhen.aliyuncs.com/background.png
 
 # The banner image of archive page
 archive_img:
@@ -644,8 +644,8 @@ text_align_justify: false
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 background: 
-  default: url(http://s5k5sxsjn.hn-bkt.clouddn.com//img/微信图片_20231217155200.png)
-  darkmode: url(http://s5k5sxsjn.hn-bkt.clouddn.com//img/微信图片_20231217154640.png)
+  default: url(https://ezailkmth.oss-cn-shenzhen.aliyuncs.com/background.png)
+  darkmode: url(https://ezailkmth.oss-cn-shenzhen.aliyuncs.com/darkmode.png)
   mobileday:
   mobilenight:
 

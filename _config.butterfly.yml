@@ -27,7 +27,7 @@ menu:
 highlight_theme: darker #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
-highlight_shrink: true # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
 highlight_height_limit: false # unit: px
 code_word_wrap: true
 
@@ -950,7 +950,7 @@ CDN:
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # when set it to local, you need to install hexo-butterfly-extjs
-  third_party_provider: jsdelivr
+  third_party_provider: cdnjs
 
   # Add version number to url, true or false
   version: false
@@ -964,8 +964,11 @@ CDN:
     # activate_power_mode:
     # algolia_js:
     # algolia_search:
-    # aplayer_css:
-    # aplayer_js:
+    algolia_search_v4: https://cdn.staticfile.org/algoliasearch/4.14.3/algoliasearch-lite.umd.min.js
+    instantsearch_v4: https://cdn.staticfile.org/instantsearch.js/4.49.2/instantsearch.production.min.js
+    pjax: https://lib.baomitu.com/pjax/0.2.8/pjax.min.js
+    aplayer_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css
+    aplayer_js: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
     # artalk_css:
     # artalk_js:
     # blueimp_md5:
@@ -981,36 +984,38 @@ CDN:
     # docsearch_js:
     # egjs_infinitegrid:
     # fancybox:
-    # fancybox_css:
+    fancybox_css: https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.min.css
+    fancybox_v4: https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.umd.min.js
     # fireworks:
     # fontawesome:
+    fontawesomeV6: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css
     # gitalk:
     # gitalk_css:
     # giscus:
-    # instantpage:
+    instantpage: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js
     # instantsearch:
     # katex:
     # katex_copytex:
-    # lazyload:
+    lazyload: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js
     # local_search:
     # main:
     # main_css:
     # mathjax:
     # medium_zoom:
     # mermaid:
-    # meting_js:
+    meting_js: https://cdn1.tianli0.top/npm/js-heo@1.0.12/metingjs/Meting.min.js
     # pangu:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # pjax: true
-    # sharejs:
-    # sharejs_css:
+    sharejs: https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js
+    sharejs_css: https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css
     # snackbar:
     # snackbar_css:
     # translate:
-    # twikoo:
-    # typed:
+    twikoo: https://cdn.staticfile.org/twikoo/1.6.8/twikoo.all.min.js
+    typed: https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/typed.js/2.0.12/typed.min.js
     # utils:
     # valine:
     # waline_css:
@@ -1055,8 +1060,8 @@ footer_beautify:
     index: 0
   # 计时器部分配置项
   # 这是我的 
-  runtime_js: http://120.78.8.96/static/runtime.js
-  runtime_css: # http://120.78.8.96/static/runtime.css
+  runtime_js: http://ezailkmth.top/static/runtime.js
+  runtime_css: # http://ezailkmth.top/static/runtime.css
   # 徽标部分配置项
   swiperpara: 0 #若非0，则开启轮播功能，每行徽标个数
   bdageitem:

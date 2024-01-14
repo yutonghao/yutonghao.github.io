@@ -210,7 +210,8 @@ footer:
   owner:
     enable: true
     since: 2023
-  custom_text: 欢迎光临！
+  # custom_text: 欢迎光临！
+  custom_text: <a href="https://beian.aliyun.com/pcContainer/myorder"><span>备案号：粤ICP备2024164504号</span></a>
   copyright: true # Copyright of theme and framework
 
 # aside (側邊欄)
@@ -1060,7 +1061,7 @@ footer_beautify:
     index: 0
   # 计时器部分配置项
   # 这是我的 
-  runtime_js: https://ezailkmth.top/static/runtime.js
+  runtime_js: https://www.ezailkmth.top/static/runtime.js
   runtime_css: # http://ezailkmth.top/static/runtime.css
   # 徽标部分配置项
   swiperpara: 0 #若非0，则开启轮播功能，每行徽标个数

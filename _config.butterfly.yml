@@ -211,7 +211,7 @@ footer:
     enable: true
     since: 2023
   # custom_text: 欢迎光临！
-  custom_text: <a href="https://beian.aliyun.com/pcContainer/myorder"><span>备案号：粤ICP备2024164504号</span></a>
+  custom_text: <a href="https://beian.aliyun.com/pcContainer/myorder"><span>粤ICP备2024164504号</span></a>
   copyright: true # Copyright of theme and framework
 
 # aside (側邊欄)
